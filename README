@@ -1,3 +1,9 @@
 An quick, hacky, ugly and working implementation of the #cheerlight projects protocol adapted for the ws2801 pixel by adafruit
 
 Should work with other similar chips
+
+You can use the included python script to pipe a twitter stream with stdin
+
+ex: curl -d "tracking=#cheerlights" https://stream.twitter.com/1/statuses/filter.json -uAnyTwitterUser:Password | python cheerlights.py > /dev/ttyUSB0
+
+Adapt for your environment
